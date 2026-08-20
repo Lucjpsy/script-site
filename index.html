@@ -2,39 +2,149 @@
 <html lang="zh-CN">
 <head>
   <meta charset="UTF-8">
-  <title>我爱一姐PVE辅助工具说明</title>
+  <title>我爱一姐PVE辅助工具使用说明</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
-
-<!-- 插入下方样式代码 -->
+  <!-- 引入 Docsify 官方暗黑主题基础库 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify@4/lib/themes/dark.css">
+  
   <style>
+    /* 
+     * 全局暗黑电竞风定制样式
+     */
+    :root {
+      --bg-main: #0b0f19;
+      --bg-card: #151d2c;
+      --text-main: #e2e8f0;
+      --text-sub: #94a3b8;
+      --neon-cyan: #38bdf8;
+      --neon-blue: #0284c7;
+      --border-glow: rgba(56, 189, 248, 0.45);
+    }
+
+    body {
+      background-color: var(--bg-main) !important;
+      color: var(--text-main) !important;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+    }
+
+    /* 正文区域宽度与字号优化 */
     .markdown-section {
-      font-size: 18px;
-      line-height: 1.8;
+      max-width: 960px !important;
+      padding: 35px 25px 90px !important;
+      font-size: 17.5px !important;
+      line-height: 1.85 !important;
+      color: var(--text-main) !important;
     }
-    .markdown-section p,
-    .markdown-section ul,
-    .markdown-section ol {
-      font-size: 18px;
+
+    /* 一级大标题（发光底边） */
+    .markdown-section h1 {
+      color: #ffffff !important;
+      font-size: 32px !important;
+      font-weight: 800;
+      border-bottom: 2px solid var(--neon-cyan) !important;
+      padding-bottom: 12px;
+      margin-top: 25px;
+      text-shadow: 0 0 16px rgba(56, 189, 248, 0.4);
     }
-    .markdown-section pre>code {
-      font-size: 15px;
+
+    /* 二级模块标题（左侧科技蓝指示条） */
+    .markdown-section h2 {
+      color: var(--neon-cyan) !important;
+      font-size: 24px !important;
+      font-weight: 700;
+      border-left: 4px solid var(--neon-cyan);
+      padding-left: 14px;
+      margin-top: 45px !important;
+      margin-bottom: 20px;
+      background: linear-gradient(90deg, rgba(56, 189, 248, 0.08) 0%, transparent 100%);
+      padding-top: 6px;
+      padding-bottom: 6px;
+      border-radius: 0 6px 6px 0;
+    }
+
+    /* 三级子标题 */
+    .markdown-section h3 {
+      color: #bae6fd !important;
+      font-size: 20px !important;
+      font-weight: 600;
+      margin-top: 30px !important;
+    }
+
+    /* 四级小功能标题胶囊化 */
+    .markdown-section h4 {
+      color: #f0f9ff !important;
+      font-size: 16.5px !important;
+      font-weight: 600;
+      background: var(--bg-card);
+      padding: 5px 14px;
+      border-radius: 6px;
+      display: inline-block;
+      border: 1px solid rgba(56, 189, 248, 0.25);
+      margin-top: 20px !important;
+      margin-bottom: 10px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    }
+
+    /* 段落与列表文字 */
+    .markdown-section p, 
+    .markdown-section li {
+      font-size: 17.5px !important;
+      color: #cbd5e1 !important;
+    }
+
+    /* 加粗重点强调 */
+    .markdown-section strong {
+      color: var(--neon-cyan) !important;
+      font-weight: 600;
+    }
+
+    /* ===================================
+       图片核心炫酷框与呼吸光晕效果
+       =================================== */
+    .markdown-section img {
+      display: block;
+      margin: 20px auto 30px auto !important;
+      max-width: 98% !important;
+      background-color: #030712;
+      padding: 6px;
+      border-radius: 12px;
+      /* 科技蓝半透明发光框 */
+      border: 2px solid var(--border-glow) !important;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8), 0 0 20px rgba(56, 189, 248, 0.25);
+      transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    /* 鼠标悬停时的动效：放大并增强光晕 */
+    .markdown-section img:hover {
+      transform: translateY(-4px) scale(1.015);
+      border-color: #38bdf8 !important;
+      box-shadow: 0 16px 40px rgba(0, 0, 0, 0.9), 0 0 35px rgba(56, 189, 248, 0.55);
+    }
+
+    /* 自定义美化滚动条 */
+    ::-webkit-scrollbar {
+      width: 8px;
+      height: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: var(--bg-main);
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #1e293b;
+      border-radius: 4px;
+      border: 1px solid #334155;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: var(--neon-cyan);
     }
   </style>
 </head>
 <body>
-  <div id="app">正在加载文档，请稍候...</div>
+  <div id="app">正在加载手册...</div>
   
   <script>
-    /*
-     * 使用说明：
-     * 1. 本脚本为 Docsify 静态文档系统的核心入口配置文件。
-     * 2. name 属性用于自定义网站左上角的全局标题。
-     * 3. loadSidebar 设为 false 表示当前为单页模式；subMaxLevel: 2 会自动抓取 README.md 中的二级标题生成右侧目录树。
-     * 4. 部署至 GitHub Pages 后，修改 README.md 即可自动更新网站内容，无需改动此文件。
-     */
     window.$docsify = {
-      name: '我爱一姐PVE辅助工具手册',
+      name: '我爱一姐PVE辅助工具',
       repo: '',
       loadSidebar: false,
       subMaxLevel: 2
