@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>天翼决自动化脚本使用手册</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
+</head>
+<body>
+  <div id="app">正在加载文档，请稍候...</div>
+  
+  <script>
+    /*
+     * 使用说明：
+     * 1. 本脚本为 Docsify 静态文档系统的核心入口配置文件。
+     * 2. name 属性用于自定义网站左上角的全局标题。
+     * 3. loadSidebar 设为 false 表示当前为单页模式；subMaxLevel: 2 会自动抓取 README.md 中的二级标题生成右侧目录树。
+     * 4. 部署至 GitHub Pages 后，修改 README.md 即可自动更新网站内容，无需改动此文件。
+     */
+    window.$docsify = {
+      name: '天翼决脚本使用手册',
+      repo: '',
+      loadSidebar: false,
+      subMaxLevel: 2
+    }
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/docsify.min.js"></script>
+</body>
+</html>
