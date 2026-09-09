@@ -1,0 +1,7 @@
+{
+  "latest_version": "3.2",
+  "download_url": "https://github.com/Lucjpsy/script-site/releases/download/v3.2/PVE3.2.exe",
+  "update_log": "优化了重启流程",
+  "force_update": false,
+  "sha256:b4132646cac00475faea1d5f815b114d5ada2166549dd9a70071568056cc24ad"
+}
