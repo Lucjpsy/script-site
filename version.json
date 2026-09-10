@@ -1,7 +1,7 @@
 {
-  "latest_version": "3.2",
-  "download_url": "https://github.com/Lucjpsy/script-site/releases/download/v3.2/3.2.exe",
-  "update_log": "优化了重启流程",
+  "latest_version": "3.3",
+  "download_url": "https://github.com/Lucjpsy/script-site/releases/download/v3.2/3.3.exe",
+  "update_log": "优化了重启流程，秩序之战地狱难度战斗逻辑",
   "force_update": false,
-  "sha256": "698992239108dc1d72a1377e1d8902701622f69696ff47570c7962d14eca246e"
+  "sha256": "a5d8625b59a5e72a8dabc377cc4b120caf78405a8591eadfdf61401a8179f60d"
 }
