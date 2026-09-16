@@ -1,7 +1,7 @@
 {
-  "latest_version": "3.6",
+  "latest_version": "3.7",
   "download_url": "https://github.com/Lucjpsy/script-site/releases/download/v3.2/3.6.exe",
-  "update_log": "优化了秩序刷石头，新增上古战场，兼容老机器",
+  "update_log": "优化了秩序刷，新增上古战场，兼容老机器，修复了体力药水二级密码问题",
   "force_update": false,
-  "sha256": "6873a171fd0325bd02b5bcc27df22543b56053b07a3f5365bc29b2069bb36c1f"
+  "sha256": "2d9b0dfc5892851a68aa53ec7ed587fa58187f2e18c19169ec182e5e80d19cc1"
 }
