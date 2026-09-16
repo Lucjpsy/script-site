@@ -1,7 +1,7 @@
 {
-  "latest_version": "3.5",
-  "download_url": "https://github.com/Lucjpsy/script-site/releases/download/v3.2/3.5.exe",
-  "update_log": "优化了秩序和沙漠物理套的战斗逻辑",
+  "latest_version": "3.6",
+  "download_url": "https://github.com/Lucjpsy/script-site/releases/download/v3.2/3.6.exe",
+  "update_log": "优化了秩序刷石头，新增上古战场",
   "force_update": false,
-  "sha256": "c615a3f25d9a83604eded1ab4085e9ef065e212644e6f333c71e96a851ed7434"
+  "sha256": "fbfc74c085cf5ba08937e6186482b6bdeb09ed9c0144ade7cbdfc536fe94f99f"
 }
