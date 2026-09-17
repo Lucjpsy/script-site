@@ -1,7 +1,7 @@
 {
-  "latest_version": "3.8",
-  "download_url": "https://github.com/Lucjpsy/script-site/releases/download/v3.2/3.8.exe",
-  "update_log": "修复了体力药水二级密码解锁，新增上古自定义坐标",
+  "latest_version": "3.9",
+  "download_url": "https://github.com/Lucjpsy/script-site/releases/download/v3.2/3.9.exe",
+  "update_log": "新增秩序石头技能自定义刷新策略",
   "force_update": false,
-  "sha256": "dd615e7d4975f275a6167e6c78632bd339903543bbec692f47466468c72bbd5e"
+  "sha256": "1d0bbd86796e1eda337c557436ebd35a8435a0b9386b8d2c689cdfaad908b1f3"
 }
