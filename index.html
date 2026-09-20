@@ -109,9 +109,78 @@
       border: 1px solid #cbd5e1 !important;
       box-shadow: 0 1px 2px rgba(0, 0, 0, 0.06);
     }
+
+    /* ⚡ 极客新增：动态静默下载按钮样式 */
+    .geek-nav-bar {
+      position: fixed;
+      top: 20px;
+      right: 30px;
+      z-index: 999;
+    }
+    .geek-download-btn {
+      background-color: var(--accent-navy);
+      color: #ffffff;
+      border: none;
+      padding: 10px 20px;
+      font-size: 15px;
+      font-weight: 600;
+      border-radius: 6px;
+      cursor: pointer;
+      box-shadow: 0 4px 6px -1px rgba(30, 64, 175, 0.2), 0 2px 4px -1px rgba(30, 64, 175, 0.1);
+      transition: all 0.2s ease-in-out;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .geek-download-btn:hover {
+      background-color: #1e3a8a;
+      transform: translateY(-2px);
+      box-shadow: 0 6px 8px -1px rgba(30, 64, 175, 0.3), 0 4px 6px -1px rgba(30, 64, 175, 0.2);
+    }
   </style>
 </head>
 <body>
+  <!-- ⚡ 极客新增：静默下载挂载点 (绝对不使用 a 标签，杜绝 href 暴露) -->
+  <nav class="geek-nav-bar">
+    <button id="geekDownloadBtn" class="geek-download-btn" onclick="executeSilentDownload()">
+      <span>⬇️</span> <span id="btnText">获取最新版客户端</span>
+    </button>
+  </nav>
+
+  <script>
+    // ⚡ 极客隐形下载引擎
+    let cachedDownloadUrl = "";
+    
+    // 页面加载时，静默嗅探同目录下的 version.json
+    // 加时间戳 ?t= 防止被 CDN 或浏览器缓存卡死旧版本
+    fetch('version.json?t=' + new Date().getTime())
+      .then(response => response.json())
+      .then(data => {
+        if (data && data.latest_version) {
+          // 动态把版本号打在按钮上
+          document.getElementById('btnText').innerText = '下载客户端 (v' + data.latest_version + ')';
+          // 悄悄把真实链接记在内存里
+          cachedDownloadUrl = data.download_url;
+        }
+      })
+      .catch(err => console.log('版本雷达探测失败', err));
+
+    // 只有当玩家真正用鼠标【点击】时，才触发真实跳转
+    function executeSilentDownload() {
+      if (cachedDownloadUrl) {
+        window.location.href = cachedDownloadUrl;
+      } else {
+        // 兜底防线：如果网速极慢 JSON 还没拉回来玩家就点，强行现场拉一次
+        fetch('version.json?t=' + new Date().getTime())
+          .then(response => response.json())
+          .then(data => {
+            window.location.href = data.download_url;
+          })
+          .catch(err => alert('下载通道尚未就绪，请稍后再试！'));
+      }
+    }
+  </script>
+
   <div id="app">正在加载手册...</div>
   
   <script>
