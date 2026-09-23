@@ -1,7 +1,7 @@
 {
-  "latest_version": "3.9",
-  "download_url": "https://github.com/Lucjpsy/script-site/releases/download/v3.2/3.9.exe",
-  "update_log": "新增秩序石头技能自定义刷新策略",
+  "latest_version": "3.10",
+  "download_url": "https://github.com/Lucjpsy/script-site/releases/download/v3.2/3.10.exe",
+  "update_log": "优化了组队模式，挂机更稳定，新增了众多每日免费试用渠道",
   "force_update": false,
-  "sha256": "1d0bbd86796e1eda337c557436ebd35a8435a0b9386b8d2c689cdfaad908b1f3"
+  "sha256": "df29cd0badd6ee754b476814ee6654a4104976aba51dd0d880c6f3d15fffc112"
 }
