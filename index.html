@@ -116,6 +116,10 @@
       top: 20px;
       right: 30px;
       z-index: 999;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end; /* 绝对右靠齐悬浮舱 */
+      gap: 12px; /* 按钮和二维码面板之间的呼吸间距 */
     }
     .geek-download-btn {
       background-color: var(--accent-navy);
@@ -131,21 +135,68 @@
       display: flex;
       align-items: center;
       gap: 8px;
+      width: 100%; /* 让按钮宽度撑满，与下方面板对齐 */
+      justify-content: center;
     }
     .geek-download-btn:hover {
       background-color: #1e3a8a;
       transform: translateY(-2px);
       box-shadow: 0 6px 8px -1px rgba(30, 64, 175, 0.3), 0 4px 6px -1px rgba(30, 64, 175, 0.2);
     }
+    /* ⚡ 极客新增：双子星二维码面板列阵 */
+    .geek-qr-panel {
+      display: flex;
+      gap: 15px;
+      background: var(--bg-content);
+      padding: 12px 15px;
+      border-radius: 8px;
+      border: 1px solid var(--border-color);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    }
+    .geek-qr-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 6px;
+    }
+    /* 强行接管 Docsify 的 img 渲染规则，防止被带偏 */
+    .geek-qr-item img {
+      width: 85px !important;
+      height: 85px !important;
+      margin: 0 !important;
+      padding: 4px !important;
+      background-color: #f8fafc !important;
+      border: 1px solid #cbd5e1 !important;
+      border-radius: 4px !important;
+      box-shadow: none !important;
+    }
+    .geek-qr-item span {
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--text-secondary);
+      letter-spacing: 0.5px;
+    }
   </style>
 </head>
 <body>
-  <!-- ⚡ 极客新增：静默下载挂载点 (绝对不使用 a 标签，杜绝 href 暴露) -->
-  <nav class="geek-nav-bar">
-    <button id="geekDownloadBtn" class="geek-download-btn" onclick="executeSilentDownload()">
-      <span>⬇️</span> <span id="btnText">获取最新版客户端</span>
-    </button>
-  </nav>
+    <!-- ⚡ 极客新增：静默下载挂载点 (绝对不使用 a 标签，杜绝 href 暴露) -->
+    <nav class="geek-nav-bar">
+      <button id="geekDownloadBtn" class="geek-download-btn" onclick="executeSilentDownload()">
+        <span>⬇️</span> <span id="btnText">获取最新版客户端</span>
+      </button>
+      
+      <!-- ⚡ 极客新增：常驻二维码双轨阵列 -->
+      <div class="geek-qr-panel">
+        <div class="geek-qr-item">
+          <img src="assets/oa_qr.jpg" alt="公众号">
+          <span>获取时长</span>
+        </div>
+        <div class="geek-qr-item">
+          <img src="assets/admin_qr.jpg" alt="管理员">
+          <span>购买包月</span>
+        </div>
+      </div>
+    </nav>
 
   <script>
     // ⚡ 极客隐形下载引擎
