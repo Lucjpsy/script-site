@@ -1,7 +1,7 @@
 {
-  "latest_version": "3.10",
-  "download_url": "https://github.com/Lucjpsy/script-site/releases/download/v3.2/3.10.exe",
-  "update_log": "优化了组队模式，挂机更稳定，新增了众多每日免费试用渠道",
+  "latest_version": "3.11",
+  "download_url": "https://github.com/Lucjpsy/script-site/releases/download/v3.2/3.11.exe",
+  "update_log": "优化了配置读取，脚本运行轻量化",
   "force_update": false,
-  "sha256": "37a40ce6cc215e7982fcd26f012a77d9202c555a9f096154d470c7d3c7135c47"
+  "sha256": "b3ef82f423d078342fd93ca9c2317d958049c07e9b87eaa0b6efce6a1097cadb"
 }
