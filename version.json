@@ -1,7 +1,7 @@
 {
-  "latest_version": "3.12",
-  "download_url": "https://github.com/Lucjpsy/script-site/releases/download/v3.2/3.12.exe",
-  "update_log": "优化了配置读取，修复已知问题，感谢反馈",
+  "latest_version": "3.13",
+  "download_url": "https://github.com/Lucjpsy/script-site/releases/download/v3.2/3.13.exe",
+  "update_log": "优化了上古战场魔王开R和复活逻辑，修复已知问题",
   "force_update": false,
-  "sha256": "24cecc431407b9c1b4785f3089043a4435f4215878a5c8aead2ee5162a1f03d2"
+  "sha256": "ad9913349e2ba9023d19b0ea6a395e34d7fcb359aeb69842c376a44c975e6ad3"
 }
