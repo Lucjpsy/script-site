@@ -1,7 +1,7 @@
 {
-  "latest_version": "3.14",
-  "download_url": "https://github.com/Lucjpsy/script-site/releases/download/v3.2/3.14.exe",
-  "update_log": "优化了组队模式进度条检测和白嫖退场逻辑",
+  "latest_version": "3.15",
+  "download_url": "https://github.com/Lucjpsy/script-site/releases/download/v3.2/3.15.exe",
+  "update_log": "优化了挂机流程，提高效率",
   "force_update": false,
-  "sha256": "c1c96bb7adc712fe064619311ebcfb85d0b3109c252acc4e2df98b16dbb80a00"
+  "sha256": "399a9ad919b8075100e912a3be6e207d0c16ccfc657c0b6edb9bbff9cb2e3eb7"
 }
