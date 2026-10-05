@@ -1,7 +1,7 @@
 {
-  "latest_version": "3.15",
-  "download_url": "https://github.com/Lucjpsy/script-site/releases/download/v3.2/3.15.exe",
-  "update_log": "优化了挂机流程，提高效率",
+  "latest_version": "3.16",
+  "download_url": "https://github.com/Lucjpsy/script-site/releases/download/v3.2/3.16.exe",
+  "update_log": "优化了上古战场魔王开R",
   "force_update": false,
-  "sha256": "399a9ad919b8075100e912a3be6e207d0c16ccfc657c0b6edb9bbff9cb2e3eb7"
+  "sha256": "8f654cdd7680b164fd91956e949572593599d42588d137e11f3696e394ed8ef5"
 }
