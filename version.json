@@ -1,7 +1,7 @@
 {
-  "latest_version": "3.16",
-  "download_url": "https://github.com/Lucjpsy/script-site/releases/download/v3.2/3.16.exe",
-  "update_log": "优化了上古战场魔王开R",
+  "latest_version": "3.17",
+  "download_url": "https://github.com/Lucjpsy/script-site/releases/download/v3.2/3.17.exe",
+  "update_log": "优化了上古战场魔王开R，新增自动登录，填对游戏客户端路径和账号密码，脚本会自动启动并开始挂机",
   "force_update": false,
-  "sha256": "8f654cdd7680b164fd91956e949572593599d42588d137e11f3696e394ed8ef5"
+  "sha256": "c05c3c11b58a11bcd83e950d4143826cac045d089d7906496a4acf9ea685e1f4"
 }
