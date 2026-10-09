@@ -1,7 +1,7 @@
 {
-  "latest_version": "3.21",
-  "download_url": "https://github.com/Lucjpsy/script-site/releases/download/v3.2/3.21.exe",
-  "update_log": "优化了上古战场魔王开R，新增自动登录，填对游戏客户端路径和账号密码，脚本会自动启动并开始挂机，优化了一点秩序逻辑，无石头不开商店",
+  "latest_version": "3.22",
+  "download_url": "https://github.com/Lucjpsy/script-site/releases/download/v3.2/3.22.exe",
+  "update_log": "优化了上古战场魔王开R，新增自动登录，填对游戏客户端路径和账号密码，脚本会自动启动并开始挂机，优化了一点秩序逻辑，无石头不开商店。修复了组队跑图模式被提前拉入选人的逻辑",
   "force_update": false,
-  "sha256": "7d0301d7cab6ded911408cd6d304eca852e994e6f85286b4754b9602fa02f250"
+  "sha256": "17eaec2f00a12752743418fb0a7b875c5c6f5b90ff5d5624f36d773e0bec85c2"
 }
