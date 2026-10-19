@@ -1,7 +1,7 @@
 {
-  "latest_version": "3.25",
-  "download_url": "https://github.com/Lucjpsy/script-site/releases/download/v3.2/3.25.exe",
-  "update_log": "修改了秩序之战的波数识别，暗影谷地的识别光圈的时序问题。",
+  "latest_version": "3.26",
+  "download_url": "https://github.com/Lucjpsy/script-site/releases/download/v3.2/3.26.exe",
+  "update_log": "优化了秩序之战的波数识别和无石头不开商店。增加了上古打boss平A坐标设置",
   "force_update": false,
-  "sha256": "b14bf0f752b3922010af6805bb0ae6793cf05a9610c188ff2f0e9b05264fc0a9"
+  "sha256": "861fcbf4b11e39c70c1a7f6a44287cb11bef2bc3e473bf25a5520758a95eecf9"
 }
