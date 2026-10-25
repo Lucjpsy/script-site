@@ -1,7 +1,7 @@
 {
-  "latest_version": "3.26",
-  "download_url": "https://github.com/Lucjpsy/script-site/releases/download/v3.2/3.26.exe",
-  "update_log": "优化了秩序之战的波数识别和无石头不开商店。增加了上古打boss平A坐标设置",
+  "latest_version": "3.27",
+  "download_url": "https://github.com/Lucjpsy/script-site/releases/download/v3.2/3.27.exe",
+  "update_log": "新增工作流功能，优化物理套熔岩",
   "force_update": false,
-  "sha256": "861fcbf4b11e39c70c1a7f6a44287cb11bef2bc3e473bf25a5520758a95eecf9"
+  "sha256": "7a616ff994ab819f09147b43d977433f2dac378caa2171c2706735e298eed213"
 }
