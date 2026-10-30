@@ -1,7 +1,7 @@
 {
-  "latest_version": "3.27",
-  "download_url": "https://github.com/Lucjpsy/script-site/releases/download/v3.2/3.27.exe",
-  "update_log": "新增工作流功能，优化物理套熔岩",
+  "latest_version": "4.1",
+  "download_url": "https://github.com/Lucjpsy/script-site/releases/download/v3.2/4.1.exe",
+  "update_log": "改做工作流面板，新增快捷键自动设置，现在可以一键完成设置和多项任务",
   "force_update": false,
-  "sha256": "7a616ff994ab819f09147b43d977433f2dac378caa2171c2706735e298eed213"
+  "sha256": "443e2adffa6fcca8ad8ee36300340d439c917b3362f5ce54baa33c57725be4c6"
 }
