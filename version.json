@@ -1,7 +1,7 @@
 {
-  "latest_version": "4.2",
-  "download_url": "https://github.com/Lucjpsy/script-site/releases/download/v3.2/4.2.exe",
-  "update_log": "改做工作流面板，新增快捷键自动设置，现在可以一键完成设置和多项任务，调整了大厅识图",
+  "latest_version": "4.3",
+  "download_url": "https://github.com/Lucjpsy/script-site/releases/download/v3.2/4.3.exe",
+  "update_log": "优化了地图中传送成功的判断",
   "force_update": false,
-  "sha256": "e26ce5a7c2b32263fad9a9be0adc354f3b52135898340e59fdad6bc6f81e8547"
+  "sha256": "e47bf26212c2b613d5e36e254520250e4497d22c869a5e7785ea04ee9a34b3d2"
 }
