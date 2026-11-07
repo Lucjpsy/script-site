@@ -1,7 +1,6 @@
 {
-  "latest_version": "4.4",
-  "download_url": "https://github.com/Lucjpsy/script-site/releases/download/v3.2/4.4.exe",
-  "update_log": "优化了对老旧机器的支持",
-  "force_update": false,
-  "sha256": "29c12ef6febbbaa2a994cb9f0ace77ce9c6402cb8d4f83f427fe6641f7bb63a4"
+  "latest_version": "4.5",
+  "download_url": "https://tyjpve-1369685034.cos.ap-guangzhou.myqcloud.com/4.5.exe",
+  "update_log": "优化了对老旧机器的支持，全面接入国内极速更新通道",
+  "force_update": false
 }
