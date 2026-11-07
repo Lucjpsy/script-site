@@ -1,7 +1,7 @@
 {
-  "latest_version": "4.3",
-  "download_url": "https://github.com/Lucjpsy/script-site/releases/download/v3.2/4.3.exe",
-  "update_log": "优化了地图中传送成功的判断",
+  "latest_version": "4.4",
+  "download_url": "https://github.com/Lucjpsy/script-site/releases/download/v3.2/4.4.exe",
+  "update_log": "优化了对老旧机器的支持",
   "force_update": false,
-  "sha256": "e47bf26212c2b613d5e36e254520250e4497d22c869a5e7785ea04ee9a34b3d2"
+  "sha256": "29c12ef6febbbaa2a994cb9f0ace77ce9c6402cb8d4f83f427fe6641f7bb63a4"
 }
