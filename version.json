@@ -1,6 +1,6 @@
 {
-  "latest_version": "4.8",
-  "download_url": "https://tyjpve-1369685034.cos.ap-guangzhou.myqcloud.com/4.8.exe",
-  "update_log": "优化了对老旧机器的支持，接入国内极速更新通道，优化了带小号开始游戏的等待/重启流程，增加了第一章传送假阳性处理机制",
+  "latest_version": "4.9",
+  "download_url": "https://tyjpve-1369685034.cos.ap-guangzhou.myqcloud.com/4.9.exe",
+  "update_log": "优化了对老旧机器的支持，接入国内极速更新通道，优化了带小号开始游戏的等待/重启流程，修改了第一章传送阵问题",
   "force_update": false
 }
