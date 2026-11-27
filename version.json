@@ -1,6 +1,6 @@
 {
-  "latest_version": "4.12",
-  "download_url": "https://tyjpve-1369685034.cos.ap-guangzhou.myqcloud.com/4.12.exe",
-  "update_log": "优化了重启操作，卡匹配进度条的时间改为自定义",
+  "latest_version": "4.13",
+  "download_url": "https://tyjpve-1369685034.cos.ap-guangzhou.myqcloud.com/4.13.exe",
+  "update_log": "优化了重启操作，卡匹配进度条的时间改为自定义，优化了物理套熔岩之地打血天使的操作",
   "force_update": false
 }
